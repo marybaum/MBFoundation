@@ -81,6 +81,7 @@ function mbfoundation_search_text( $text ) {
 	return esc_attr( 'Search.' );
 }
 
+
 //* Enqueue site-wide scripts
 add_action( 'wp_enqueue_scripts', 'custom_load_scripts' );
 function custom_load_scripts() {

@@ -41,7 +41,7 @@ function mbf_after_loop (){
 //* Customize the entry meta in the entry header (requires HTML5 theme support)
 add_filter( 'genesis_post_info', 'mbf_post_info_filter' );
 function mbf_post_info_filter($post_info) {
-	$post_info = '[post_date] [post_edit]';
+	$post_info = '[post_edit]';
 	return $post_info;
 }
 

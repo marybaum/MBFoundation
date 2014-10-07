@@ -1064,7 +1064,8 @@ select {
   .pull-11 {
     position: relative;
     right: 91.66667%;
-    left: auto; } }
+    left: auto; }
+ }
 /* Panels
 .panel {
   border-style: solid;
@@ -1471,13 +1472,13 @@ blockquote p {
   border: none;
   padding: 0 0.0625rem; }
 
-@media only screen and (min-width: 40.063em) {
+ /*@media only screen and (min-width: 40.063em) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
     margin: .75em 0 .25em;
     }
 
-  /*
+
   h1 {
     font-size: 2.75rem; }
 
