@@ -1,0 +1,171 @@
+html  {
+  font-size: 62.5%;
+  -webkit-appearance: none;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: BaskervilleOSlight, serif;
+  font-size: 21px;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.ambiance-grid .entry,
+.button,
+.site-header,
+.site-header .wrap,
+#responsive-menu-icon::before {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition:    all 0.2s ease-in-out;
+  -ms-transition:     all 0.2s ease-in-out;
+  -o-transition:      all 0.2s ease-in-out;
+  transition:         all 0.2s ease-in-out;
+}
+
+::-moz-selection {
+  background-color: #196;
+  color: #fff;
+}
+
+::selection {
+  background-color: #196;
+  color: #fff;
+}
+
+a {
+  color: #196;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #06f;
+}
+
+p {
+  margin: 0 0 .5em;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+b,
+strong {
+  font-family: arquitecta_boldbold, serif;
+}
+
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  color: #999;
+  margin: 40px;
+}
+
+blockquote::before {
+  content: "\201C";
+  display: block;
+  font-size: 30px;
+  height: 0;
+  left: -24px;
+  position: relative;
+  top: -6px;
+}
+
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3 {
+  color: #083;
+  font-family: BaskervilleOSxlight, serif;
+  font-weight: normal;
+  line-height: .85;
+  margin: 0 0 .5em;
+}
+
+h4,
+h5,
+h6  {
+  color: #03f;
+  font-family: 'arquitecta_blackblack', sans-serif;
+  font-weight: normal;
+  line-height: 1;
+
+}
+
+h1 {
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 42px;
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 36px;
+  font-size: 3.6rem;
+}
+
+h4 {
+  font-size: 30px;
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+
+/* Navigation
+--------------------------------------------- */
+.genesis-nav-menu {
+  clear: both;
+  font-family: 'Arquitecta_boldbold', sans-serif;
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+/* Content
+--------------------------------------------- */
+
+.home-top .featured-content .entry-title {
+  font-family: BaskervilleOSlight, serif;
+  font-size: 48px;
+  font-size: 4.8rem;
+}

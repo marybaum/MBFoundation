@@ -1,0 +1,192 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2014 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Latinotype
+ * License URL: http://www.fontspring.com/fflicense/latinotype
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'arquitecta_blackblack';
+    src: url('ArquitectaBlack-webfont.eot');
+    src: url('ArquitectaBlack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaBlack-webfont.woff') format('woff'),
+         url('ArquitectaBlack-webfont.ttf') format('truetype'),
+         url('ArquitectaBlack-webfont.svg#arquitecta_blackblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitecta_blackblack_italic';
+    src: url('ArquitectaBlack-Italic-webfont.eot');
+    src: url('ArquitectaBlack-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaBlack-Italic-webfont.woff') format('woff'),
+         url('ArquitectaBlack-Italic-webfont.ttf') format('truetype'),
+         url('ArquitectaBlack-Italic-webfont.svg#arquitecta_blackblack_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitecta_boldbold';
+    src: url('ArquitectaBold-webfont.eot');
+    src: url('ArquitectaBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaBold-webfont.woff') format('woff'),
+         url('ArquitectaBold-webfont.ttf') format('truetype'),
+         url('ArquitectaBold-webfont.svg#arquitecta_boldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitecta_boldbold_italic';
+    src: url('ArquitectaBold-Italic-webfont.eot');
+    src: url('ArquitectaBold-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaBold-Italic-webfont.woff') format('woff'),
+         url('ArquitectaBold-Italic-webfont.ttf') format('truetype'),
+         url('ArquitectaBold-Italic-webfont.svg#arquitecta_boldbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitecta_heavyheavy';
+    src: url('ArquitectaHeavy-webfont.eot');
+    src: url('ArquitectaHeavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaHeavy-webfont.woff') format('woff'),
+         url('ArquitectaHeavy-webfont.ttf') format('truetype'),
+         url('ArquitectaHeavy-webfont.svg#arquitecta_heavyheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitecta_heavyheavy_italic';
+    src: url('ArquitectaHeavy-Italic-webfont.eot');
+    src: url('ArquitectaHeavy-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaHeavy-Italic-webfont.woff') format('woff'),
+         url('ArquitectaHeavy-Italic-webfont.ttf') format('truetype'),
+         url('ArquitectaHeavy-Italic-webfont.svg#arquitecta_heavyheavy_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitectaitalic';
+    src: url('Arquitecta-Italic-webfont.eot');
+    src: url('Arquitecta-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Arquitecta-Italic-webfont.woff') format('woff'),
+         url('Arquitecta-Italic-webfont.ttf') format('truetype'),
+         url('Arquitecta-Italic-webfont.svg#arquitectaitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitecta_lightlight';
+    src: url('ArquitectaLight-webfont.eot');
+    src: url('ArquitectaLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaLight-webfont.woff') format('woff'),
+         url('ArquitectaLight-webfont.ttf') format('truetype'),
+         url('ArquitectaLight-webfont.svg#arquitecta_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitecta_lightlight_italic';
+    src: url('ArquitectaLight-Italic-webfont.eot');
+    src: url('ArquitectaLight-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaLight-Italic-webfont.woff') format('woff'),
+         url('ArquitectaLight-Italic-webfont.ttf') format('truetype'),
+         url('ArquitectaLight-Italic-webfont.svg#arquitecta_lightlight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitecta_mediummedium';
+    src: url('ArquitectaMedium-webfont.eot');
+    src: url('ArquitectaMedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaMedium-webfont.woff') format('woff'),
+         url('ArquitectaMedium-webfont.ttf') format('truetype'),
+         url('ArquitectaMedium-webfont.svg#arquitecta_mediummedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitecta_mediumMdIt';
+    src: url('ArquitectaMedium-Italic-webfont.eot');
+    src: url('ArquitectaMedium-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaMedium-Italic-webfont.woff') format('woff'),
+         url('ArquitectaMedium-Italic-webfont.ttf') format('truetype'),
+         url('ArquitectaMedium-Italic-webfont.svg#arquitecta_mediumMdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitectaregular';
+    src: url('Arquitecta-webfont.eot');
+    src: url('Arquitecta-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Arquitecta-webfont.woff') format('woff'),
+         url('Arquitecta-webfont.ttf') format('truetype'),
+         url('Arquitecta-webfont.svg#arquitectaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitecta_thinthin';
+    src: url('ArquitectaThin-webfont.eot');
+    src: url('ArquitectaThin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaThin-webfont.woff') format('woff'),
+         url('ArquitectaThin-webfont.ttf') format('truetype'),
+         url('ArquitectaThin-webfont.svg#arquitecta_thinthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arquitecta_thinthin_italic';
+    src: url('ArquitectaThin-Italic-webfont.eot');
+    src: url('ArquitectaThin-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaThin-Italic-webfont.woff') format('woff'),
+         url('ArquitectaThin-Italic-webfont.ttf') format('truetype'),
+         url('ArquitectaThin-Italic-webfont.svg#arquitecta_thinthin_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

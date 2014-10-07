@@ -1,0 +1,2039 @@
+/*
+	Theme Name: mbfoundation
+	Author: Mary Baum
+	Author URI: http://www.marybaum.com/
+	Version: 0.1.0
+
+	Tags: full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+
+	Template: genesis
+	Template Version: 2.0.0
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+
+/* Table of Contents
+
+	- HTML5 Reset
+		- Baseline Normalize
+		- Box Sizing
+		- Float Clearing
+	- Defaults
+		- Typographical Elements
+		- Headings
+		- Objects
+		- Forms
+		- Tables
+	- Structure and Layout
+		- Site Containers
+		- Column Widths and Positions
+		- Column Classes
+	- Common Classes
+		- WordPress
+		- Genesis
+		- Titles
+	- Widgets
+		- Featured Content
+	- Plugins
+		- Genesis eNews Extended
+		- Genesis Latest Tweets
+		- Gravity Forms
+		- Jetpack
+	- Site Header
+		- Title Area
+		- Widget Area
+	- Site Navigation
+		- Header Navigation
+		- Primary Navigation
+		- Secondary Navigation
+	- Content Area
+		- Entries
+		- Pagination
+		- Comments
+	- Sidebars
+	- Footer Widgets
+	- Site Footer
+	- Media Queries
+		- max-width: 1139px
+		- max-width: 1023px
+		- max-width: 767px
+
+*/
+
+
+/*
+HTML5 Reset
+---------------------------------------------------------------------------------------------------- */
+
+/* Baseline Normalize
+	normalize.css v2.1.2 | MIT License | git.io/normalize
+--------------------------------------------- */
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block
+}
+audio, canvas, video {
+  display: inline-block
+}
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+[hidden] {
+  display: none
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+body {
+  margin: 0
+}
+a:focus {
+  outline: thin dotted
+}
+a:active, a:hover {
+  outline: 0
+}
+h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+abbr[title] {
+  border-bottom: 1px dotted
+}
+b, strong {
+  font-weight: bold
+}
+dfn {
+  font-style: italic
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0
+}
+mark {
+  background: #ff0;
+  color: #000
+}
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em
+}
+pre {
+  white-space: pre-wrap
+}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"
+}
+small {
+  font-size: 80%
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+sup {
+  top: -0.5em
+}
+sub {
+  bottom: -0.25em
+}
+img {
+  border: 0
+}
+svg:not(:root) {
+  overflow: hidden
+}
+figure {
+  margin: 0
+}
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em
+}
+legend {
+  border: 0;
+  padding: 0
+}
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0
+}
+button, input {
+  line-height: normal
+}
+button, select {
+  text-transform: none
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer
+}
+button[disabled], html input[disabled] {
+  cursor: default
+}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+textarea {
+  overflow: auto;
+  vertical-align: top
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+
+/* Box Sizing
+--------------------------------------------- */
+
+*,
+input[type="search"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+/* Float Clearing
+--------------------------------------------- */
+
+.archive-pagination:before,
+.clearfix:before,
+.entry:before,
+.entry-pagination:before,
+.footer-widgets:before,
+.nav-primary:before,
+.nav-secondary:before,
+.site-container:before,
+.site-footer:before,
+.site-header:before,
+.site-inner:before,
+.wrap:before {
+	content: " ";
+	display: table;
+}
+
+.archive-pagination:after,
+.clearfix:after,
+.entry:after,
+.entry-pagination:after,
+.footer-widgets:after,
+.nav-primary:after,
+.nav-secondary:after,
+.site-container:after,
+.site-footer:after,
+.site-header:after,
+.site-inner:after,
+.wrap:after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+
+
+/*
+Defaults
+---------------------------------------------------------------------------------------------------- */
+
+/* Typographical Elements
+--------------------------------------------- */
+
+html  {
+  font-size: 62.5%;
+  -webkit-appearance: none;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'arquitecta_lightlight', sans-serif;
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 1.3;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.ambiance-grid .entry,
+.button,
+.site-header,
+.site-header .wrap,
+#responsive-menu-icon::before {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition:    all 0.2s ease-in-out;
+  -ms-transition:     all 0.2s ease-in-out;
+  -o-transition:      all 0.2s ease-in-out;
+  transition:         all 0.2s ease-in-out;
+}
+
+::-moz-selection {
+  background-color: #196;
+  color: #fff;
+}
+
+::selection {
+  background-color: #196;
+  color: #fff;
+}
+
+a {
+  color: #196;
+  font-family: 'arquitecta_boldbold', sans-serif;
+  text-decoration: none;
+}
+
+a p {
+  color: #666;
+}
+
+a:hover {
+  color: #09d;
+}
+
+p {
+  margin: 0 0 .5em;
+  padding: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+b,
+strong {
+  font-family: arquitecta_boldbold, serif;
+}
+
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  color: #999;
+  margin: 40px;
+}
+
+blockquote::before {
+  content: "\201C";
+  display: block;
+  font-size: 30px;
+  height: 0;
+  left: -24px;
+  position: relative;
+  top: -6px;
+}
+
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3 {
+  color: #096;
+  font-family: BaskervilleOSxlight, serif;
+  font-weight: normal;
+  line-height: .85;
+  margin: 0 0 .5em;
+}
+
+h4,
+h5,
+h6  {
+  color: #096;
+  font-family: 'arquitecta_boldbold', sans-serif;
+  font-weight: normal;
+  line-height: 1;
+  margin: 1em 0 .5em;
+
+}
+
+h1 {
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 42px;
+  font-size: 4.2rem;
+}
+
+h3 {
+  font-size: 36px;
+  font-size: 3.6rem;
+}
+
+h4 {
+  font-size: 30px;
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+h6 {
+  color: #09d;
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: .5px;
+}
+
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+  margin: 1em 0;
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	width: auto; /* IE8 */
+}
+
+/* Forms
+--------------------------------------------- */
+
+input,
+select,
+textarea {
+  background-color: #fff;
+  border: 1px solid #999;
+  color: #999;
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 1rem;
+  padding: 10px;
+  padding: 1rem;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+	border: 1px solid #999;
+	outline: none;
+}
+
+::-moz-placeholder {
+	color: #999;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: #999;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.entry-content .button {
+	background-color: #096;
+	border: none;
+	box-shadow: none;
+	color: #fff;
+	cursor: pointer;
+	padding: 16px 24px;
+	padding: 1.6rem 2.4rem;
+	text-transform: uppercase;
+	width: auto;
+}
+
+button:hover,
+input:hover[type="button"],
+input:hover[type="reset"],
+input:hover[type="submit"],
+.button:hover,
+.entry-content .button:hover {
+	background-color: #f15123;
+}
+
+.entry-content .button:hover {
+	color: #fff;
+}
+
+.button {
+	border-radius: 3px;
+	display: inline-block;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+	display: none;
+}
+
+/* Tables
+--------------------------------------------- */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
+	width: 100%;
+}
+
+tbody {
+	border-bottom: 1px solid #ddd;
+}
+
+th,
+td {
+	text-align: left;
+}
+
+th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td {
+	border-top: 1px solid #ddd;
+	padding: 6px 0;
+	padding: 0.6rem 0;
+}
+
+
+/*
+Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* Site Containers
+--------------------------------------------- */
+
+.wrap {
+  margin: 2rem auto;
+  max-width: 1140px;
+  padding: 2rem 0 0;
+}
+
+.site-inner {
+  clear: both;
+  margin: 0 auto;
+}
+
+.site-inner {
+  clear: both;
+  margin: 5em auto;
+}
+
+.page .site-inner {
+  background: #fff;
+  clear: both;
+  margin: 70rem auto 0;
+}
+
+.single .site-inner {
+  background: #fff;
+  clear: both;
+  margin: 70rem auto 0;
+}
+
+.archive .site-inner {
+  clear: both;
+  margin: 0 5rem;
+}
+
+/* Column Widths and Positions
+--------------------------------------------- */
+
+/* Wrapping div for .content and .sidebar-primary */
+
+.content-sidebar-sidebar .content-sidebar-wrap,
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	width: 80%;
+}
+
+.content-sidebar-sidebar .content-sidebar-wrap {
+	float: left;
+}
+
+.sidebar-content-sidebar .content-sidebar-wrap,
+.sidebar-sidebar-content .content-sidebar-wrap {
+	float: right;
+}
+
+/* Content */
+
+.content {
+	float: right;
+	width: 71%;
+}
+
+.content-sidebar .content,
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content {
+	float: left;
+}
+
+.content-sidebar-sidebar .content,
+.sidebar-content-sidebar .content,
+.sidebar-sidebar-content .content {
+	width: 60%;
+}
+
+.page .full-width-content .content,
+.single .full-width-content .content,
+.single .content {
+  background: #fff;
+  margin: 0;
+  max-width: none;
+  width: 100%;
+}
+
+.full-width-content .content {
+  width: 100%;
+  float: none;
+  margin: 0 auto;
+}
+
+/* Primary Sidebar */
+
+.sidebar-primary {
+	float: right;
+	width: 360px;
+}
+
+.sidebar-content .sidebar-primary,
+.sidebar-sidebar-content .sidebar-primary {
+	float: left;
+}
+
+/* Secondary Sidebar */
+
+.sidebar-secondary {
+	float: left;
+	width: 180px;
+}
+
+.content-sidebar-sidebar .sidebar-secondary {
+	float: right;
+}
+
+/* Column Classes
+	Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
+--------------------------------------------- */
+
+.five-sixths,
+.four-sixths,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fourths,
+.three-sixths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+	float: left;
+	margin-left: 2.564102564102564%;
+}
+
+.one-half,
+.three-sixths,
+.two-fourths {
+	width: 48.717948717948715%;
+}
+
+.one-third,
+.two-sixths {
+	width: 31.623931623931625%;
+}
+
+.four-sixths,
+.two-thirds {
+	width: 65.81196581196582%;
+}
+
+.one-fourth {
+	width: 23.076923076923077%;
+}
+
+.three-fourths {
+	width: 74.35897435897436%;
+}
+
+.one-sixth {
+	width: 14.52991452991453%;
+}
+
+.five-sixths {
+	width: 82.90598290598291%;
+}
+
+.first {
+	clear: both;
+	margin-left: 0;
+}
+
+
+/*
+Common Classes
+---------------------------------------------------------------------------------------------------- */
+
+/* WordPress
+--------------------------------------------- */
+
+.avatar {
+	float: left;
+}
+
+.alignleft .avatar {
+	margin-right: 24px;
+	margin-right: 2.4rem;
+}
+
+.alignright .avatar {
+	margin-left: 24px;
+	margin-left: 2.4rem;
+}
+
+.search-form input[type="submit"] {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.sticky {
+}
+
+img.centered,
+.aligncenter {
+	display: block;
+	margin: 0 auto 24px;
+	margin: 0 auto 2.4rem
+}
+
+img.alignnone {
+	margin-bottom: 12px;
+	margin-bottom: 1.2rem;
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+}
+
+img.alignleft,
+.wp-caption.alignleft {
+	margin: 0 24px 24px 0;
+	margin: 0 2.4rem 2.4rem 0;
+}
+
+img.alignright,
+.wp-caption.alignright {
+	margin: 0 0 24px 24px;
+	margin: 0 0 2.4rem 2.4rem;
+}
+
+img.inlinelogo  {
+  border: none;
+  box-shadow: none;
+}
+
+.wp-caption-text {
+  font-family: 'arquitecta', sans-serif;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.archive img.post-image {
+  background: #eee;
+  box-shadow: 10px 10px 20px #ddd;
+  margin: 0 0 1rem;
+  width: 100%;
+}
+
+.gallery-caption {
+}
+
+.widget_calendar table {
+	width: 100%;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+	text-align: center;
+}
+
+/* Genesis
+--------------------------------------------- */
+
+.breadcrumb,
+.single .breadcrumb {
+  background: rgba(255, 255, 255, 0.3);
+  border: .75px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  margin: 11rem auto 0;
+  max-width: 1140px;
+  padding:  .5rem 2rem;
+  text-shadow: 1px 1px 0 #222;
+}
+
+.archive .breadcrumb {
+  color: #222;
+  text-shadow: none;
+}
+
+.archive-description,
+.author-box {
+	background-color: #fff;
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
+}
+
+.archive-description {
+	padding: 40px 40px 24px;
+	padding: 4rem 4rem 2.4rem;
+}
+
+.author-box {
+	padding: 40px;
+	padding: 4rem;
+}
+
+.author-box-title {
+	color: #096;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 4px;
+	margin-bottom: 0.4rem;
+}
+
+.author-box a {
+	border-bottom: 1px solid #ddd;
+}
+
+.author-box p {
+	margin-bottom: 0;
+}
+
+.author-box .avatar {
+	margin-right: 24px;
+	margin-right: 2.4rem;
+}
+
+/* Titles
+--------------------------------------------- */
+
+.entry-title {
+	font-size: 36px;
+	font-size: 3.6rem;
+	line-height: 1;
+}
+
+.entry-title a,
+.sidebar .widget-title a {
+	color: #096;
+}
+
+.entry-title a:hover {
+	color: #09d;
+}
+
+.page-template-single-php h1.entry-title,
+.single h1.entry-title {
+  color:  #fff;
+  font-family: 'arquitecta_boldbold', sans-serif;
+  font-size: 5em;
+  line-height: 1;
+  margin: 60rem 0 0;
+  text-align: center;
+  text-shadow: 1px 1px 0 #222;
+}
+
+.page-template-single-php article h1.entry-title,
+.single article h1.entry-title {
+  color:  #fff;
+  font-size: 1px;
+  margin: 1rem 0 0 0;
+  text-shadow: 0;
+}
+
+.slides h1.entry-title {
+color: #096;
+font-family: 'arquitecta_boldbold', sans-serif;
+font-size: 3em;
+line-height: 1;
+margin: 100rem 0 0;
+text-align: center;
+text-shadow: none;
+}
+
+.slides li.post h1.entry-title {
+color: #096;
+font-family: 'arquitecta_boldbold', sans-serif;
+font-size: 3rem;
+line-height: 1;
+margin: 1rem 0;
+text-align: left;
+text-shadow: none;
+}
+
+.widget-title {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 24px;
+	margin-bottom: 2.4rem;
+	text-transform: uppercase;
+}
+
+.sidebar .widget-title a {
+	border: none;
+}
+
+.archive-title {
+	font-size: 20px;
+	font-size: 2rem;
+	margin-bottom: 24px;
+	margin-bottom: 2.4rem;
+}
+
+.archive .entry-title {
+  font-size: 30px;
+  font-size: 3rem;
+}
+
+
+/*
+Widgets
+---------------------------------------------------------------------------------------------------- */
+
+/* Featured Content
+--------------------------------------------- */
+.home-top .featured-content .entry {
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.home-top.widget-area .wrap {
+  max-width: none;
+}
+
+.home-top.widget-area .entry-header,
+.home-top.widget-area .entry-content {
+  margin: 0 auto;
+  max-width: 114rem;
+}
+
+.home-bottom .widget-wrap {
+  display: block;
+  float: left;
+  margin: 0 2% 1.2rem 0;
+  width: 30%;
+}
+
+.home-bottom-left.widget-area.featuredpost,
+.home-bottom-middle.widget-area.featuredpost,
+.home-bottom-right.widget-area.featuredpost  {
+  height: 771px;
+  height: 77.1rem;
+}
+
+.featured-content .entry {
+  border: none;
+  margin: 1.2rem 0;
+  padding: 0;
+}
+
+.featured-content .entry-title {
+	border: none;
+	color: #196;
+	font-family: 'arquitecta_boldbold', sans-serif;
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 1.2;
+	margin: 1.2rem 0;
+}
+
+.featured-content .entry-title a {
+	border: none;
+	color: #196;
+}
+
+.featured-content .entry-title a:hover  {
+  color: #09d;
+}
+
+.featured-content p.more-from-category a  {
+  background: #096;
+  color: #fff;
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*
+Plugins
+---------------------------------------------------------------------------------------------------- */
+
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget {
+	color: #999;
+}
+
+.enews-widget .widget-title {
+	color: #fff;
+}
+
+.enews-widget input {
+	margin-bottom: 16px;
+	margin-bottom: 1.6rem;
+}
+
+.enews-widget input:focus {
+	border: 1px solid #ddd;
+}
+
+.enews-widget input[type="submit"] {
+	background-color: #f15123;
+	color: #fff;
+	margin: 0;
+	width: 100%;
+}
+
+.enews-widget input:hover[type="submit"] {
+	background-color: #fff;
+	color: #096;
+}
+
+/* Genesis Latest Tweets
+--------------------------------------------- */
+
+.latest-tweets ul li {
+	margin-bottom: 16px;
+	margin-bottom: 1.6rem;
+}
+
+/* Gravity Forms
+---------------------------------------------
+
+div.gform_wrapper input[type="email"],
+div.gform_wrapper input[type="text"],
+div.gform_wrapper textarea,
+div.gform_wrapper .ginput_complex label {
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding: 16px;
+	padding: 1.6rem;
+}
+
+div.gform_wrapper .ginput_complex label {
+	padding: 0;
+}
+
+div.gform_wrapper li,
+div.gform_wrapper form li {
+	margin: 16px 0 0;
+	margin: 1.6rem 0 0;
+}
+
+div.gform_wrapper .gform_footer input[type="submit"] {
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+/* Jetpack
+--------------------------------------------- */
+
+img#wpstats {
+	display: none;
+}
+
+
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+  box-shadow: 2px 2px 2px #ddd;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.site-header,
+.single-post .site-header.shrink,
+.site-header.shrink {
+  background-color: #fff;
+}
+
+.admin-bar .site-header.shrink {
+  top: 32px;
+}
+
+.site-header .wrap {
+  padding: 1rem 2.5rem 0;
+}
+
+.header-image .site-header.shrink .wrap,
+.site-header.shrink .wrap {
+  padding: 0;
+}
+
+/* Title Area
+--------------------------------------------- */
+
+.title-area {
+  float: left;
+  font-family: 'arquitecta_boldbold', sans-serif;
+  padding: 16px 0;
+  padding: 1.6rem 0 0;
+  width: 30%;
+}
+
+.header-image .title-area {
+  padding: 0;
+}
+
+.site-title {
+  font-size: 28px;
+  font-size: 2.8rem;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.site-title a,
+.site-title a:hover {
+  color: #096;
+}
+
+.site-description {
+  color: #09d;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+/* Full width header, no widgets */
+
+.header-full-width .title-area,
+.header-full-width .site-title {
+  width: 100%;
+}
+
+.header-image .site-description,
+.header-image .site-title a {
+  display: block;
+  text-indent: -9999px;
+}
+
+/* Logo, hide text */
+
+.header-image .site-header .wrap {
+  background: url(images/logo.png) no-repeat left;
+  padding: 0;
+}
+
+.header-image .site-title a {
+  float: left;
+  min-height: 164px;
+  width: 100%;
+}
+
+/* Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+  float: right;
+  text-align: right;
+  width: 70%;
+}
+
+.header-image .site-header .widget-area {
+  margin: 2rem 0 0;
+}
+
+.site-header .widget-area .widget-wrap  {
+  display: inline;
+}
+
+.site-header nav .widget_nav_menu {
+  float: right;
+  width: 60%;
+}
+
+.site-header .search-form {
+  float: right;
+  margin: 0;
+  width: 34%;
+}
+
+
+/*
+Site Navigation
+---------------------------------------------------------------------------------------------------- */
+
+.genesis-nav-menu {
+  float: left;
+  font: normal normal 1.8rem/1.3 'arquitecta_boldbold', sans-serif;
+  text-align: right;
+  width: 65%;
+}
+
+.genesis-nav-menu .menu-item {
+  display: inline-block;
+  text-align: left;
+}
+
+.genesis-nav-menu a {
+  border: none;
+  color: #096;
+  display: block;
+  padding: 20px;
+  padding: 2rem;
+  position: relative;
+}
+
+@media and only screen width
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item > a {
+  color: #09d;
+}
+
+.genesis-nav-menu .sub-menu li a:hover {
+  background: #09d;
+  color: #fff;
+}
+
+.genesis-nav-menu .sub-menu li a {
+  background: #096;
+  color: #fff;
+}
+
+/*.genesis-nav-menu > .menu-item > a {
+  text-transform: uppercase;
+}*/
+
+.genesis-nav-menu .sub-menu {
+  left: -9999px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity .4s ease-in-out;
+  -moz-transition:    opacity .4s ease-in-out;
+  -ms-transition:     opacity .4s ease-in-out;
+  -o-transition:      opacity .4s ease-in-out;
+  transition:         opacity .4s ease-in-out;
+  width: 100px;
+  z-index: 99;
+}
+
+.genesis-nav-menu .sub-menu a {
+  border-top: none;
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 16px 10px;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  width: 11rem;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+	margin: -54px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+	position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+	padding-left: 0;
+}
+
+.genesis-nav-menu > .last > a {
+	padding-right: 0;
+}
+
+.genesis-nav-menu > .right {
+	display: inline-block;
+	float: right;
+	list-style-type: none;
+	padding: 28px 0;
+	padding: 2.8rem 0;
+	text-transform: uppercase;
+}
+
+.genesis-nav-menu > .right > a {
+	display: inline;
+	padding: 0;
+}
+
+.genesis-nav-menu > .rss > a {
+	margin-left: 48px;
+	margin-left: 4.8rem;
+}
+
+.genesis-nav-menu > .search {
+	padding: 14px 0 0;
+	padding: 1.4rem 0 0;
+}
+
+/* Site Header Navigation
+--------------------------------------------- */
+
+.site-header .sub-menu {
+	border: 0;
+}
+
+.site-header .sub-menu .sub-menu {
+	margin-top: -55px;
+}
+
+/* Primary Navigation
+--------------------------------------------- */
+
+.nav-primary {
+	background-color: none;
+}
+
+.nav-primary a:hover,
+.nav-primary .current-menu-item > a {
+	color: #096;
+}
+
+.nav-primary .sub-menu a:hover {
+	color: #09d;
+}
+
+/* Secondary Navigation
+--------------------------------------------- */
+
+.nav-secondary {
+	background-color: #fff;
+}
+
+
+/*
+Content Area
+---------------------------------------------------------------------------------------------------- */
+
+/* Entries
+--------------------------------------------- */
+
+.entry {
+  margin: 0 1em 20px;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.entry-content a {
+  color: #096;
+  font-family: 'arquitecta_boldbold', sans-serif;
+}
+
+.entry-content a:hover {
+  color: #09d;
+}
+
+.entry-content a.more-link  {
+  background: #096;
+  color: #fff;
+  display: block;
+  margin: 1rem 0;
+  padding: 15px;
+  padding: .5rem;
+  text-align: center;
+}
+
+.single .entry-content img  {
+  display: none;
+}
+
+.single .entry-background {
+  margin: 7rem 0 0;
+}
+
+.single .entry-content  {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+   column-count: 2;
+}
+
+.entry-content .attachment a,
+.entry-content .gallery a {
+	border: none;
+}
+
+.entry-content ol,
+.entry-content p,
+.entry-content ul,
+.quote-caption {
+	margin-bottom: 26px;
+	margin-bottom: 2.6rem;
+}
+
+.entry-content ol,
+.entry-content ul {
+	margin-left: 40px;
+	margin-left: 4rem;
+}
+
+.entry-content ol li {
+	list-style-type: decimal;
+}
+
+.entry-content ul li {
+	list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+	margin-bottom: 0;
+}
+
+.entry-content .search-form {
+	width: 50%;
+}
+
+.entry-meta {
+  color: #333;
+  font-family: 'arquitecta', sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+.entry-meta a {
+  border: none;
+}
+
+.single p.entry-meta  {
+  display: none;
+}
+
+.entry-header .entry-meta {
+  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
+}
+
+.entry-footer .entry-meta {
+  margin: 0 10px;
+  margin: 0 1rem;
+  padding: 0 0 8px;
+  padding: 0 0 0.8rem;
+}
+
+.entry-comments-link::before {
+  content: "\2014";
+  margin: 0 6px 0 2px;
+  margin: 0 0.6rem 0 0.2rem;
+}
+
+.entry-categories,
+.entry-tags {
+	display: block;
+}
+
+/* Pagination
+--------------------------------------------- */
+
+.archive-pagination,
+.entry-pagination {
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin: 40px 0;
+	margin: 4rem 0;
+}
+
+.archive-pagination li {
+	display: inline;
+}
+
+.archive-pagination li a {
+	background-color: #096;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 12px;
+	padding: 0.8rem 1.2rem;
+}
+
+.archive-pagination li a:hover,
+.archive-pagination li.active a {
+	background-color: #f15123;
+}
+
+.entry-pagination a {
+	border-bottom: 1px solid #ddd;
+}
+
+/* Comments
+--------------------------------------------- */
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	background-color: #fff;
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
+}
+
+.entry-comments {
+	padding: 40px;
+	padding: 4rem;
+}
+
+.comment-respond,
+.entry-pings {
+	padding: 40px 40px 16px;
+	padding: 4rem 4rem 1.6rem;
+}
+
+.comment-respond a,
+.entry-comments a {
+	border-bottom: 1px solid #ddd;
+}
+
+.comment-content {
+	clear: both;
+}
+
+.entry-comments .comment-author {
+	margin-bottom: 0;
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+	width: 50%
+}
+
+.comment-respond label {
+	display: block;
+	margin-right: 12px;
+	margin-right: 1.2rem;
+}
+
+.comment-list li,
+.ping-list li {
+	list-style-type: none;
+}
+
+.comment-list li {
+	margin-top: 24px;
+	margin-top: 2.4rem;
+	padding: 32px;
+	padding: 3.2rem;
+}
+
+.comment-list li li {
+	margin-right: -32px;
+	margin-right: -3.2rem;
+}
+
+li.comment {
+	background-color: #f5f5f5;
+	border: 2px solid #fff;
+	border-right: none;
+}
+
+.comment .avatar {
+	margin: 0 16px 24px 0;
+	margin: 0 1.6rem 2.4rem 0;
+}
+
+.entry-pings .reply {
+	display: none;
+}
+
+.bypostauthor {
+}
+
+.form-allowed-tags {
+	background-color: #f5f5f5;
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 24px;
+	padding: 2.4rem;
+}
+
+
+/*
+Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+	color: #999;
+}
+
+.sidebar a {
+	border-bottom: 1px solid #ddd;
+}
+
+.sidebar p:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar li {
+	list-style-type: none;
+	margin-bottom: 6px;
+	margin-bottom: 0.6rem;
+	word-wrap: break-word;
+}
+
+.sidebar ul > li:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar .widget {
+	background-color: #fff;
+	border-radius: 3px;
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
+	padding: 40px;
+	padding: 4rem;
+}
+
+.sidebar .enews-widget {
+	background-color: #096;
+}
+
+
+/*
+Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+	background-color: none;
+	color: #096;
+	clear: both;
+	padding: 40px 0 16px;
+	padding: 4rem 0 1.6rem;
+}
+
+.footer-widgets-1,
+.footer-widgets-3 {
+	width: 350px;
+}
+
+.footer-widgets-2 {
+	width: 360px;
+}
+
+.footer-widgets-1 {
+	margin-right: 40px;
+	margin-right: 4rem;
+}
+
+.footer-widgets-1,
+.footer-widgets-2 {
+	float: left;
+}
+
+.footer-widgets-3 {
+	float: right;
+}
+
+.footer-widgets a {
+	border-bottom: 1px solid #666;
+	color: #999;
+}
+
+.footer-widgets a:hover {
+	color: #ddd;
+}
+
+.footer-widgets .widget {
+	margin-bottom: 24px;
+	margin-bottom: 2.4rem;
+}
+
+.footer-widgets .widget-title {
+	color: #fff;
+}
+
+.footer-widgets li {
+	list-style-type: none;
+	margin-bottom: 6px;
+	margin-bottom: 0.6rem;
+	word-wrap: break-word;
+}
+
+.footer-widgets .search-form input:focus {
+	border: 1px solid #ddd;
+}
+
+
+/*
+Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+	background-color: #fff;
+	color: #999;
+	font-size: 14px;
+	font-size: 1.4rem;
+	padding: 40px 0;
+	padding: 4rem 0;
+	text-align: center;
+}
+
+.site-footer a {
+	border-bottom: 1px solid #ddd;
+}
+
+.site-footer p {
+	margin-bottom: 0;
+}
+
+/* Medium-like Full View Featured Image
+---------------------------------------------
+
+a img {
+  margin-bottom: 0;
+}
+
+.site-header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.single-post .site-header {
+  background: rgba(17, 153, 102, 0.5);
+}
+
+.featured-single .wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.featured-single .wrap {
+  display: table;
+  max-width: none;
+  text-align: center;
+}
+
+.featured-single .entry-header {
+    display: table-cell;
+  font-size: 20px;
+  padding: 200px 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.featured-single .entry-header .entry-title {
+  color: #fff;
+  font-size: 60px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.1);*/
+  /*background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 10px 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+}
+
+/*.featured-single .entry-meta {
+  color: #196;
+  font-size: 1.4rem;
+  /*background: rgba(0, 0, 0, 0.6);*/
+  /*display: inline-block;
+  padding: 5px 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+}
+
+/*.featured-single .entry-meta a {
+  border-bottom: 1px dotted #fff;
+  color: #196;
+}
+
+.site-header .wrap {
+  padding: 10px 0;
+}
+
+.single-post .site-title a, .single-post .site-title a:hover {
+  color: #fff;
+}
+
+.single-post .nav-header .genesis-nav-menu a {
+  color: #fff;
+}
+
+.single-post .nav-header .genesis-nav-menu a:hover {
+  background: rgba(0, 153, 221, 0.5;)
+  color: #fff;
+}
+
+.site-inner {
+  margin-top: 104px;
+}
+.single-post .site-inner {
+  margin-top: 0;
+}
+
+.arrow {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.arrow a {
+  background: #fff;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 13px 10px 6px;
+  text-align: center;
+  line-height: 1;
+}
+
+.arrow a:before {
+  -webkit-font-smoothing: antialiased;
+  color: #000;
+  content: "\f347";
+  font: normal 40px/1 'dashicons';
+  height: 40px;
+  width: 40px;
+}
+
+.arrow a:focus {
+  outline: none;
+}
+
+/*
+Media Queries
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (-moz-min-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-device-pixel-ratio: 1.5) {
+
+	.header-image .site-header .wrap {
+		background: url(images/logo@2x.png) no-repeat left;
+		background-size: 320px 164px;
+	}
+
+}
+
+@media only screen and (max-width: 1139px) {
+
+	.site-inner,
+	.wrap {
+		max-width: 960px;
+	}
+
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		width: 740px;
+	}
+
+	.content,
+	.site-header .widget-area {
+		width: 620px;
+	}
+
+	.sidebar-content-sidebar .content,
+	.sidebar-sidebar-content .content,
+	.content-sidebar-sidebar .content {
+		width: 400px;
+	}
+
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.sidebar-primary,
+	.title-area {
+		width: 300px;
+	}
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+	body {
+		background-color: #fff;
+	}
+
+	.content,
+	.content-sidebar-sidebar .content,
+	.content-sidebar-sidebar .content-sidebar-wrap,
+	.footer-widgets-1,
+	.footer-widgets-2,
+	.footer-widgets-3,
+	.sidebar-content-sidebar .content,
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-primary,
+	.sidebar-secondary,
+	.sidebar-sidebar-content .content,
+	.sidebar-sidebar-content .content-sidebar-wrap,
+	.site-inner,
+	.wrap {
+		width: 100%;
+	}
+
+	.site-header .wrap {
+		padding: 20px 0;
+		padding: 2rem 0;
+	}
+
+	.header-image .site-header .wrap {
+		background-position: center top;
+	}
+
+	.site-inner {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.archive-description,
+	.author-box,
+	.comment-respond,
+	.entry,
+	.entry-comments,
+	.entry-footer .entry-meta,
+	.header-image .site-header .widget-area,
+	.sidebar .widget,
+	.site-header {
+		padding: 0;
+	}
+
+
+  .genesis-nav-menu {
+    float: left;
+    font: normal normal 1.8rem/1.3 'arquitecta_boldbold', sans-serif;
+    text-align: right;
+    width: 66%;
+  }
+
+  .genesis-nav-menu .menu-item {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .genesis-nav-menu a {
+    border: none;
+    color: #096;
+    display: block;
+    padding: 20px;
+    padding: 2rem 1rem;
+    position: relative;
+  }
+
+	.entry-footer .entry-meta {
+		margin: 0;
+		padding-top: 12px;
+		padding-top: 1.2rem;
+	}
+
+	.sidebar .widget.enews-widget {
+		padding: 40px;
+		padding: 4rem;
+	}
+
+	.site-footer {
+		padding: 24px 0;
+		padding: 2.4rem 0;
+	}
+
+	.footer-widgets {
+		padding: 40px 5% 16px;
+	}
+
+	.footer-widgets-1 {
+		margin: 0;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.five-sixths,
+	.four-sixths,
+	.one-fourth,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.three-fourths,
+	.three-sixths,
+	.two-fourths,
+	.two-sixths,
+	.two-thirds {
+		margin: 0;
+		width: 100%;
+	}
+
+}
+
