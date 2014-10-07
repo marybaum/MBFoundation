@@ -274,9 +274,10 @@ html  {
 body {
   background-color: #fff;
   color: #333;
-  font-family: 'arquitecta_lightlight', sans-serif;
+  font-family: 'raleway', sans-serif;
   font-size: 22px;
   font-size: 2.2rem;
+  font-weight:300;
   line-height: 1.3;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -313,7 +314,8 @@ textarea:focus,
 
 a {
   color: #196;
-  font-family: 'arquitecta_boldbold', sans-serif;
+  font-family: raleway, sans-serif;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -342,7 +344,8 @@ ul li {
 
 b,
 strong {
-  font-family: 'arquitecta_boldbold' , serif;
+  font-family: 'raleway' , sans-serif;
+  font-weight: 700;
 }
 
 cite,
@@ -374,7 +377,8 @@ h1,
 h2,
 h3 {
   color: #096;
-  font-family: 'arquitecta_boldbold', sans-serif;
+  font-family: 'raleway' , sans-serif;
+  font-weight: 700;
   font-weight: normal;
   line-height: .85;
   margin: 0 0 .5em;
@@ -383,9 +387,6 @@ h3 {
 h4,
 h5,
 h6  {
-  color: #096;
-  font-family: 'arquitecta_boldbold', sans-serif;
-  font-weight: normal;
   line-height: 1;
   margin: 1em 0 .5em;
 
@@ -795,7 +796,8 @@ img.inlinelogo  {
 }
 
 .wp-caption-text {
-  font-family: 'arquitecta', sans-serif;
+  font-family: 'raleway', sans-serif;
+  font-weight: 400;
   font-size: 1.6rem;
   text-align: left;
 }
@@ -828,7 +830,8 @@ img.inlinelogo  {
   border: .75px solid #fff;
   border-radius: 50px;
   color: #fff;
-  font-family: arquitecta, sans-serif;
+  font-family: 'raleway', sans-serif;
+  font-weight: 400;
   margin: 11rem auto 0;
   max-width: 1140px;
   padding:  .5rem 2rem;
@@ -902,7 +905,8 @@ img.inlinelogo  {
   border-radius: 1rem;
   color:  #fff;
   display: block;
-  font-family: 'arquitecta_boldbold', sans-serif;
+  font-family: 'raleway' , sans-serif;
+  font-weight: 700;
   font-size: 6em;
   line-height: .9;
   margin: 60rem auto 0;
@@ -999,7 +1003,8 @@ Widgets
 
 .home-top.widget-area button a  {
   color: #fff;
-  font-family: 'arquitecta_boldbold', sans-serif;
+  font-family: 'raleway' , sans-serif;
+  font-weight: 700;
 }
 
 .home-top.widget-area button a:hover  {
@@ -1028,7 +1033,8 @@ Widgets
 .featured-content .entry-title {
 	border: none;
 	color: #196;
-	font-family: 'arquitecta_boldbold', sans-serif;
+	font-family: 'raleway' , sans-serif;
+  font-weight: 700;
 	font-size: 24px;
 	font-size: 2.4rem;
 	line-height: 1.2;
@@ -1170,7 +1176,8 @@ Site Header
 
 .title-area {
   float: left;
-  font-family: 'arquitecta_boldbold', sans-serif;
+  font-family: 'raleway' , sans-serif;
+  font-weight: 700;
   padding: 16px 0;
   padding: 1.6rem 0 0;
   width: 30%;
@@ -1263,7 +1270,7 @@ Site Navigation
 
 .genesis-nav-menu {
   float: left;
-  font: normal normal 1.8rem/1.3 'arquitecta_boldbold', sans-serif;
+  font: normal 700 1.8rem/1.3 'raleway', sans-serif;
   text-align: right;
   width: 65%;
 }
@@ -1420,7 +1427,8 @@ Content Area
 
 .entry-content a {
   color: #096;
-  font-family: 'arquitecta_boldbold', sans-serif;
+  font-family: 'raleway' , sans-serif;
+  font-weight: 700;
 }
 
 .entry-content a:hover {
@@ -1504,7 +1512,8 @@ Content Area
 
 .entry-meta {
   color: #333;
-  font-family: 'arquitecta', sans-serif;
+  font-family: 'raleway', sans-serif;
+  font-weight: 400;
   font-size: 14px;
   font-size: 1.4rem;
 }
@@ -1897,7 +1906,7 @@ Media Queries
 
   .genesis-nav-menu {
     float: left;
-    font: normal normal 1.8rem/1.3 'arquitecta_boldbold', sans-serif;
+    font: normal 700 1.8rem/1.3 'raleway', sans-serif;
     text-align: right;
     width: 66%;
   }

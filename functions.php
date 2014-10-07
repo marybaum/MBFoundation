@@ -34,30 +34,22 @@ add_theme_support( 'genesis-responsive-viewport' );
 	// Add Foundation JS
 	wp_enqueue_script( 'mbfoundation-js', get_template_directory_uri() . '/foundation/js/foundation.min.js', array( 'jquery' ), '1', true );
 	wp_enqueue_script( 'foundation-modernizr-js', get_template_directory_uri() . '/foundation/js/vendor/modernizr.js', array( 'jquery' ), '1', true );
-
-	//Foundation Init JS
 	wp_enqueue_script( 'foundation-init-js', get_template_directory_uri() . '/foundation/js/foundation.js', array( 'jquery' ), '1', true );
 
 	function mbfoundation_enqueue_style(){
 
-//register typography
-wp_register_style( 'mbfoundation-arquitecta', get_stylesheet_directory_uri() . '/type/arquitecta/arquitecta.css', array(), '2' );
-
-wp_register_style( 'mbfoundation-baskerville', get_stylesheet_directory_uri() . '/type/baskerville/baskerville.css', array(), '2' );
-
-wp_register_style( 'mbfoundation-poller', get_stylesheet_directory_uri() . '/type/poller/pollerone.css', array(), '2' );
-
-//Add Foundation CSS
-	//wp_register_style( 'foundation-normalize', get_stylesheet_directory_uri() . '/foundation/css/normalize.css' );
-
 	wp_register_style( 'foundation', get_stylesheet_directory_uri() . '/foundation/css/foundation.css' );
 
-	wp_enqueue_style( 'mbfoundation-arquitecta' );
-	wp_enqueue_style( 'mbfoundation-baskerville' );
-	wp_enqueue_style( 'mbfoundation-poller' );
 	wp_enqueue_style( 'foundation' );
 
 }
+
+//* Enqueue Raleway and Titillium Web Google fonts
+add_action( 'wp_enqueue_scripts', 'enterprise_google_fonts' );
+function enterprise_google_fonts() {
+
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Raleway:300,400,700,800|Rufina:400,700', array(), MBFoundation );
+
 add_action( 'wp_enqueue_scripts', 'mbfoundation_enqueue_style' );
 
 /** Add custom body class to the head */
