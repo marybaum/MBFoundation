@@ -17,7 +17,7 @@ add_action('genesis_before_loop', 'mbf_before_loop');
 
 function mbf_before_loop(){
 	echo '<div class="row">
-				<ul class="small-block-grid-3 medium-block-grid-3 large-block-grid-3">';
+				<ul class="small-12 medium-12 large-block-grid-3">';
 }
 
 add_action('genesis_before_entry', 'mbf_before_entry');
